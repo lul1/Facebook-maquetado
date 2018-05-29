@@ -603,3 +603,10 @@ background: -webkit-linear-gradient(#3f51b5,#f4433685);
 
           display: none;
       }
+
+      #logoutfacebook:hover{
+          color:  #4267b2;
+          background-color: white;
+
+
+      }
