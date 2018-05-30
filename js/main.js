@@ -64,3 +64,13 @@ $(document).ready(function(){
     })
 
 /*SCROLL MAGIC */
+
+
+var controller = new ScrollMagic.Controller();
+
+
+var Scene1Left = new ScrollMagic.Scene({
+  triggerElement: '.about_us'
+})
+.setClassToggle('.about_us', 'show')
+.addTo(controller);

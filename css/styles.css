@@ -686,3 +686,28 @@ section.content p{
 
 
 /*SCROLL MAGIC */
+.about_us{
+  opacity: 0;
+  transition: 1s;
+  display: block;
+
+}
+.about_us.show {
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.about_us.show{
+  opacity: 1;
+}
