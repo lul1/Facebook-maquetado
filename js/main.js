@@ -68,9 +68,53 @@ $(document).ready(function(){
 
 var controller = new ScrollMagic.Controller();
 
-
 var Scene1Left = new ScrollMagic.Scene({
-  triggerElement: '.about_us'
+  triggerElement: '.lista1'
 })
-.setClassToggle('.about_us', 'show')
+.setClassToggle('.lista1', 'show')
+.addTo(controller);
+
+var Scene2Left = new ScrollMagic.Scene({
+  triggerElement: '.about_title'
+})
+.setClassToggle('.about_title', 'show')
+.addTo(controller);
+
+
+var Scene3Left = new ScrollMagic.Scene({
+  triggerElement: '.scroll2'
+})
+.setClassToggle('.scroll2', 'show')
+.addTo(controller);
+
+
+var Scene4Right = new ScrollMagic.Scene({
+  triggerElement: '.ourpeople'
+})
+.setClassToggle('.ourpeople', 'show')
+.addTo(controller);
+
+var Scene5Right = new ScrollMagic.Scene({
+  triggerElement: '.lista_about'
+})
+.setClassToggle('.lista_about', 'show')
+.addTo(controller);
+
+var Scene6Left = new ScrollMagic.Scene({
+  triggerElement: '.galeria_title'
+})
+.setClassToggle('.galeria_title', 'show')
+.addTo(controller);
+
+
+var Scene7Left = new ScrollMagic.Scene({
+  triggerElement: '.galeria_div'
+})
+.setClassToggle('.galeria_div', 'show')
+.addTo(controller);
+
+var Scene8Right = new ScrollMagic.Scene({
+  triggerElement: '.containerform'
+})
+.setClassToggle('.containerform', 'show')
 .addTo(controller);

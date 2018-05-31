@@ -4,54 +4,7 @@ body{
   padding: 0;
   font-family: sans-serif;
 }
-/* reset css
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
 
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers
-
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-body {
-  line-height: 1;
-  box-sizing: border-box;
-  font-family: 'Asap', sans-serif;
-}
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* fin del reset */
 
 
 
@@ -66,7 +19,7 @@ nav{
 }
 
 nav.black{
-  background: #009688cf;
+  background: #eeeeeed6;
   z-index: 1;
 }
 
@@ -133,7 +86,7 @@ nav.black ul {
 
 
 nav ul li a.active:hover{
-  color:  rgb(234, 226, 226);
+  color:  #009688;
 
 }
 
@@ -157,7 +110,7 @@ section.sec1{
     text-transform: uppercase;
     color: white;
     margin: auto;
-    width: 99%;
+    width: 90%;
     height: 50%;
     margin-top: 225px;
 
@@ -680,24 +633,92 @@ section.content p{
       }
 
       #logoutfacebook:hover{
-          color:  #f44336
+          color:  #f44336;
 
       }
 
 
 /*SCROLL MAGIC */
-.about_us{
+.lista1{
+  opacity: 0;
+  transition: 1s;
+  display: block;
+
+
+}
+.lista1.show {
+  animation-duration: 2s;
+}
+
+
+.lista1.show{
+  opacity: 1;
+}
+
+.about_title{
   opacity: 0;
   transition: 1s;
   display: block;
 
 }
-.about_us.show {
-  animation-duration: 3s;
+.about_title.show {
+  animation-duration: 2s;
   animation-name: slidein;
 }
 
 @keyframes slidein {
+  from {
+    margin-left: -100%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.about_title.show{
+  opacity: 1;
+}
+
+.scroll2{
+  opacity: 0;
+  transition: 1s;
+  display: block;
+
+}
+.scroll2.show {
+  animation-duration: 2s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: -100%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.scroll2.show{
+  opacity: 1;
+}
+
+.ourpeople{
+  opacity: 0;
+  transition: 1s;
+  display: block;
+
+}
+.ourpeople.show {
+  animation-duration: 2s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
   from {
     margin-left: 100%;
     width: 100%
@@ -708,6 +729,139 @@ section.content p{
     width: 100%;
   }
 }
-.about_us.show{
+.ourpeople.show{
+  opacity: 1;
+}
+
+.lista_about{
+  opacity: 0;
+  transition: 1s;
+
+
+}
+.lista_about.show {
+  animation-duration: 2s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.lista_about.show{
+  opacity: 1;
+}
+
+.lista_about{
+  opacity: 0;
+  transition: 1s;
+
+
+}
+.lista_about.show {
+  animation-duration: 2s;
+  animation-name: slidein2;
+}
+
+@keyframes slidein2 {
+  from {
+    margin-left: 100%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+.lista_about.show{
+  opacity: 1;
+}
+
+
+.galeria_title{
+  opacity: 0;
+  transition: 1s;
+}
+
+.galeria_title.show {
+  animation-duration: 2s;
+  animation-name: slidein4;
+}
+
+@keyframes slidein4 {
+  from {
+    margin-left: -100%;
+    width: 100%
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+.galeria_title.show{
+  opacity: 1;
+}
+
+
+.galeria_div{
+  opacity: 0;
+  transition: 1s;
+}
+
+.galeria_div.show {
+  animation-duration: 2s;
+  animation-name: slidein5;
+}
+
+@keyframes slidein5 {
+  from {
+    margin-left: -100%;
+
+  }
+
+  to {
+    margin-left: 7.5%;
+
+  }
+}
+
+.galeria_div.show{
+  opacity: 1;
+
+}
+
+.containerform{
+  opacity: 0;
+  transition: 1s;
+
+}
+
+.containerform.show {
+  animation-duration: 2s;
+  animation-name: slidein6;
+}
+
+@keyframes slidein6 {
+  from {
+    margin-left: 100%;
+
+  }
+
+  to {
+    margin-left: 35.5%;
+
+  }
+}
+.containerform.show{
   opacity: 1;
 }
