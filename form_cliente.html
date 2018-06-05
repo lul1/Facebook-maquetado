@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/fontawesome-all.css">
+  <link href="https://fonts.googleapis.com/css?family=Asap|Flamenco" rel="stylesheet">
+  <title>Sign-up</title>
+
+</head>
+<body class="container_registro_form">
+  <div class="logo_form">
+    <h1 class="">
+      <a href="index.html">7° ART</a>
+    </h1>
+  </div>
+
+  <div class="block-form">
+    <h2 class="form_title">Sign Up Now!</h2>
+
+    <form class="form" action="index.html" method="post" onsubmit="return validar()">
+      <input type="text" name="text" placeholder="Full Name" onkeypress="return soloLetras(event)" id="name" class="input_form_signup">
+      <input type="email" name="email" placeholder="Email" value="" id="email" class="input_form_signup">
+      <input type="password" name="password" placeholder="Password" value="" id="contraseña" class="input_form_signup">
+      <input type="password" name="confirm" placeholder="Confirm Password" value="" id="confirmar"  class="input_form_signup">
+      <input type="submit" name="" class="btn-light" value="CREATE ACCOUNT"  id="submit">
+    </form>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/jquery.js"></script>
+  <script src="js/fb.js"></script>
+
+
+</body>
+</html>

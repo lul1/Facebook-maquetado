@@ -86,10 +86,27 @@ nav.black ul {
 
 
 nav ul li a.active:hover{
+  color:  #01579b;
+
+}
+nav.black ul li a.active:hover{
   color:  #009688;
 
 }
 
+#Signup{
+  color: white;
+  padding: 10px;
+  background-color: #4CAF50;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+#Signup:hover{
+    color:  #4CAF50;
+    background-color: white;
+
+}
 
 
 section.sec1{
@@ -864,4 +881,100 @@ section.content p{
 }
 .containerform.show{
   opacity: 1;
+}
+
+
+/* REGISTRO */
+
+.logo_form h1 a{
+
+  text-decoration: none;
+  font-weight: bold;
+  background: -webkit-linear-gradient(#F44336,#3f51b5ab);
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+  color: #F44336;
+  FONT-SIZE: 50PX;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  display: block;
+  padding: 2rem;
+}
+
+.container_registro_form{
+    background-color: rgb(143, 196, 191);
+    height: 100vh;
+}
+
+
+  .block-form {
+    background: #fff;
+    width: 500px;
+    height: 564px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+  }
+
+  .input_form_signup {
+    display: block;
+    width: 350px;
+    padding: 19px 10px;
+    margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    border-style: none;
+    border-bottom: 2px solid black;
+
+  }
+
+  .form_title {
+    color: grey;
+    font-size: 1.7rem;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Roboto';
+    padding-top: 61px;
+  }
+
+.btn-light{
+  display: block;
+  width: 350px;
+  padding: 19px 10px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  border-style: none;
+  background-color: 50px;
+  background-color: #8fc4bf;
+  cursor: pointer;
+  transition: .5s;
+  margin-top: 43px;
+
+}
+
+.btn-light:hover{
+  background-color: #8fc4bf;
+  background: rgb(0, 150, 136);
+}
+
+.block-form-login{
+  background: #fff;
+  width: 500px;
+  height: 418px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+  border-radius: 20px;
 }
